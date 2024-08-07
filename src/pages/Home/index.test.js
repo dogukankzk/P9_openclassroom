@@ -29,11 +29,15 @@ describe("When Form is created", () => {
 
 
 describe("When a page is created", () => {
-  it("a list of events is displayed", () => {
+  it("a list of events is displayed", async () => {
     // to implement
+    render(<Home />);
+    await screen.findByText("#DigitonPARIS")
   })
-  it("a list a people is displayed", () => {
+  it("a list a people is displayed", async () => {
     // to implement
+    render(<Home />);
+    await screen.findByText("Notre équipe")
   })
   it("a footer is displayed", () => {
     // to implement
