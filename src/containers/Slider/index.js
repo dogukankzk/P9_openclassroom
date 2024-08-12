@@ -8,7 +8,6 @@ const Slider = () => {
   const { data } = useData();
   const [index, setIndex] = useState(0);
 
-  // Supposons que data.focus soit un objet avec des clés représentant les événements
   const eventKeys = data ? Object.keys(data.focus) : [];
   
   // Trie les clés par date décroissante
